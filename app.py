@@ -2,6 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as stc
 
 from ml_app import run_ml_app
+from eda_app import run_eda_app
 
 html_temp = """
             
@@ -35,7 +36,7 @@ def main():
 
     elif choice == "EDA":
         # Run EDA App
-        print("EDA")
+        run_eda_app()
     elif choice == "ML Section":
         # Run ML App
         run_ml_app()
